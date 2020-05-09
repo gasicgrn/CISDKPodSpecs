@@ -1,38 +1,14 @@
-Pod::Spec.new do |s|
-
-# 1
-s.platform = :ios
-s.ios.deployment_target = '8.0'
-s.name = "ContentInsightTracker"
-s.summary = "Content Insight Tracker"
-s.requires_arc = true
-
-# 2
-s.version = "0.1.0"
-
-# 3
-s.license = { :type => "MIT", :file => "LICENSE" }
-
-# 4 - Replace with your name and e-mail address
-s.author = { "Goran Gasic" => "gasicgrn@gmail.com" }
-
-# 5 - Replace this URL with your own GitHub page's URL (from the address bar)
-s.homepage = "https://github.com/gasicgrn/Content-Insights-SDK"
-
-# 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/gasicgrn/Content-Insights-SDK", 
-             :tag => "#{s.version}" }
-
-# 7
-s.dependency 'ContentInsightTracker', '~> 1.2.1'
-
-# 8
-s.source_files = "ContentInsightTracker/**/*.{swift}"
-
-# 9
-# s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
-
-# 10
-s.swift_version = "5.2.2"
-
+Pod::Spec.new do |spec|
+  spec.platform = :ios
+  spec.ios.deployment_target = '8.0'
+  spec.name         = 'ContentInsightTracker'
+  spec.version      = '0.1.0'
+  spec.license      = { :type => 'BSD' }
+  spec.homepage     = 'https://github.com/gasicgrn/Content-Insights-SDK'
+  spec.authors      = { 'Goran Gasic' => 'gasicgrn@gmail.com' }
+  spec.summary      = ' ContentInsightTracker Class for iOS.'
+  spec.source       = { :git => 'https://github.com/gasicgrn/Content-Insights-SDK', :tag => 'v1.2.1' }
+  spec.source_files = 'ContentInsightTracker.{h,m}'
+  spec.framework    = 'ContentInsightTracker'
+  spec.swift_version = "5.2.2"
 end
