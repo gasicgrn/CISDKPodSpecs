@@ -27,7 +27,7 @@ s.source = { :git => "https://github.com/gasicgrn/Content-Insights-SDK",
 s.dependency 'ContentInsightTracker', '~> 1.2.1'
 
 # 8
-s.source_files = "RWPickFlavor/**/*.{swift}"
+s.source_files = "ContentInsightTracker/**/*.{swift}"
 
 # 9
 # s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
