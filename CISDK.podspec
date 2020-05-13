@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.authors      = { 'Goran Gasic' => 'gasicgrn@gmail.com' }
   spec.summary      = ' ContentInsightTracker Class for iOS.'
   spec.source       = { :git => 'https://github.com/gasicgrn/Content-Insights-SDK.git', :tag => 'v1.2.1' }
-  spec.source_files = 'ContentInsightTracker.{h,m}'
+  spec.source_files = 'ContentInsightTracker/**/*.swift'
   spec.framework    = 'ContentInsightTracker'
   spec.swift_version = "5.2.2"
 end
